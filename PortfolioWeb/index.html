@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILY | Personal Porfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Russo+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="https://kit.fontawesome.com/e4692a4181.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <div class="head-container">
+            <nav>
+                <img src="personal-portfolio-img/images/carrot.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#art-blog">Art Blogs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="carousel">
+            <div class="cloud">
+                <img src="personal-portfolio-img/images/8697741-removebg-preview (1).png">
+                <img src="personal-portfolio-img/images/8697741-removebg-preview (2).png">
+                <img src="personal-portfolio-img/images/8697741-removebg-preview (3).png">
+            </div>
+        </div>
+        <div class="header-text">
+            <p>Game Developer</p>
+            <h1>Hi, I'm<span> ILy</span><br>From Thailand!</h1>
+        </div>
+        <img class="profile-img" src="personal-portfolio-img/images/image2-Photoroom.png">
+    </div>
+</div>
+<!----------about--------->
+<div id="about">
+    <div class="container">
+        <div class="card">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="personal-portfolio-img/images/image.jpg">
+                </div>
+                <div class="about-col-2">
+                    <div class="about-row">
+                        <h1 class="sub-title">About Me</h1>
+                        <img src="personal-portfolio-img/images/1.png" class="logoAboutMe">
+                    </div>
+                    <p class="about-me">I’m ILY. I build slightly unhinged tech-art and game projects while gaslighting myself into thinking I’m fine. I’m a high school senior who spends my life oscillating between Blender renders, debugging game mechanics, and niche research rabbit holes. Currently 50% code, 50% arts, and 100% doomscrolling. I’m fine, I promise...</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills & Tools</p>
+                    <p class="tab-links" onclick="opentab('experience')">Education</p>
+                    <p class="tab-links" onclick="opentab('education')">Certificate</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                    <li><span>Game Development</span></li>
+                    <div class="skills-tools">
+                        <i class="fa-brands fa-unity"></i>
+                        <i class="devicon-csharp-plain"></i>
+                    </div>
+                    <li><span>3D Modeling & Art</span></li>
+                    <div class="skills-tools">
+                        <i class="devicon-blender-original"></i>
+                    </div>
+                    <li><span>UI/UX Design</span></li>
+                    <div class="skills-tools">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-square-js"></i>
+                        <i class="devicon-vscode-plain"></i>
+                        <i class="devicon-mysql-original"></i> 
+                    </div>
+                    <li><span>Others</span></li>
+                    <div class="skills-tools">
+                        <i class="fa-brands fa-python"></i>
+                        <i class="devicon-figma-plain"></i>
+                        <i class="devicon-arduino-plain"></i>
+                    </div>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2012 - 2015 GPAX 4.00</span><br>Kindergarten: Lertlah Kanchanapisek</li>
+                        <li><span>2016 - 2019 GPAX 4.00</span><br>Primary School: Lertlah Kanchanapisek</li>
+                        <li><span>2020 - 2023 GPAX 3.84</span><br>Secondary School: Saint Joseph Convent</li>
+                        <li><span>2024 - 2027 GPAX --</span><br>Senior High School: Saint Joseph Convent</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <div class="certificate-img">
+                        <div id="image-overlay" class="overlay">
+                            <span class="close-btn">&times;</span>
+                        </div>
+                        <img src="personal-portfolio-img/images/image1.jpg">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="tree">
+            <img src="personal-portfolio-img/images/+dmCS+-Photoroom.png">
+            <img src="personal-portfolio-img/images/+dmCS+-Photoroom.png"> 
+        </div>
+    </div>
+</div>
+<div id="image-overlay" class="overlay">
+    <span class="close-btn">&times;</span>
+</div>
+<!-----------Projects------------>
+<div id="projects">
+    <section class="slider-container">
+        <h1 class="slider-sub-title">My Projects</h1>
+        <div class="slider-images" id="sql-projects-slider">
+            <p>Loading projects. . .</p>
+        </div>
+    </section>
+</div>
+<!--------Art blogs---->
+<div id="art-blog">
+    <div class="art-container">
+        <h1 class="art-sub-title">My Art Blogs :D</h1>
+        <div class="art-gallery" id="sql-art-gallery">
+            <p>Loading artworks. . .</p>
+        </div>
+    </div>
+</div>
+<!------contact------>
+<div id="contact">
+    <div class="social-container">
+        <h1>My Socials</h1>
+        <div class="social-links">
+            <a href="https://web.facebook.com/kalaya.watcharodomprasert.1/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.instagram.com/ily_socool/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/shinn17" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://ily-socool.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+
+    const _supabase = supabase.createClient('https://nvypnypdbrrcdtetfolz.supabase.co', 'sb_publishable_Cueak_ZM4j53R-GMCTd1RQ__4frprAU');
+
+    async function loadProjects() {
+        const {data, error} = await _supabase.from('projects_list').select('*').order('id', {ascending: true});
+        if (error) return console.error(error);
+
+        const slider = document.getElementById('sql-projects-slider');
+        slider.innerHTML = data.map((item, index) => {
+            const activeClass = (index === 1) ? 'active' : '';
+            const media = item.is_video
+                ? `<video autoplay loop muted><source src="${item.media_url}" type="video/mp4"></video>`
+                : `<img src="${item.media_url}">`;
+
+            return `
+                <div class="slider-img ${activeClass}">
+                    ${media}
+                    <h1>${item.category}</h1>
+                    <div class="details">
+                        <h2>${item.title}</h2>
+                        <p>${item.description}</p>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        setupSliderClick();
+    }
+
+    async function loadArtBlogs() {
+        const {data,error} = await _supabase.from('art_blogs').select('*');
+        if (error) return console.error(error);
+
+        const gallery = document.getElementById('sql-art-gallery');
+        gallery.innerHTML = data.map(item => `
+            <div class="art-blog-item">
+                <img src="${item.image_url}">
+                <div class="art-text">
+                    <h2>${item.title}</h2>
+                    <p>${item.description}</p>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents"); 
+
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    function setupSliderClick() {
+        $('.slider-img').on('click', function(){
+            $('.slider-img').removeClass('active');
+            $(this).addClass('active');
+        });
+    }
+
+    $(document).ready(function() {
+        $('.certificate-img img').on('click', function() {
+            $(this).toggleClass('active');
+            $('body').toggleClass('image-zoomed');
+            $('#image-overlay').fadeToggle();
+        });
+
+        $('#image-overlay .close-btn').on('click', function() {
+            $('.certificate-img img').removeClass('active');
+            $('body').removeClass('image-zoomed');
+            $('#image-overlay').fadeOut();
+        });
+    });
+
+
+    $(document).ready(function() {
+        loadProjects();
+        loadArtBlogs(); 
+    });
+    
+</script>
+</body>
+</html>
