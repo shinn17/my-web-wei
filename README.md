@@ -1,15 +1,1 @@
-# 🥕 My Personal Portfolio
-
-A website showcasing my journey in **3D Art**, **Web Dev**, and **Game Development**.
-
-## 🌐 Live Site
-https://my-web-wei.onrender.com
-
-## 🚀 Key Features
-- **Project Slider:** Interactive cards with CSS animations.
-- **Art Gallery:** Collage of 3D Blender models & digital art.
-- **Responsive:** Optimized for both Desktop and Mobile.
-
-## 🛠️ Tech Used
-- **Frontend:** HTML, CSS, JavaScript
-- **Database:** SQL
+🥕 This site is just a place where I talk about myself and play around with UI design. I wanted to see how far I could go with just HTML and CSS (and a little bit of JavaScript) but CSS was still a struggle. I also spent many hours just trying to find the right color combos to get the vibe I wanted. .🙏Pls enjoy?
